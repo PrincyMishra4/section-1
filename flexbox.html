@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .item{
+            background-color: rgb(165, 165, 225);
+            padding: 30px;
+            border: 2px solid blue;
+            font-size: 30px;
+            width: 300px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .parent{
+            display: flex;
+            /* justify-content: flex-end; */
+            justify-content: space-evenly;
+            align-items: center;
+            /* flex-direction: column-reverse; */
+            height: 100vh;
+            border-radius: 1;
+        }
+
+
+        body{
+            margin: 0;
+        }
+
+        .prod-img{
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        @media  screen and ( max-width: 600px) {
+            .parent{
+                flex-direction: column;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    
+<div class="parent">
+    <div class="item">
+        <img class="prod-img" src="https://www.photographyblog.com/imager/entryimages/121915/canon_eos_850d_01_8c9cd6ffa9b02044a7a3327bc82c5649.jpg" alt="">
+        <h3>Cannon Camra</h3>
+    </div>
+<div class="item">
+    <img class="prod-img" src="https://www.photographyblog.com/imager/entryimages/121915/canon_eos_850d_01_8c9cd6ffa9b02044a7a3327bc82c5649.jpg" alt="">
+    <h3>Cannon Camra</h3>
+</div>
+<div class="item">
+    <img class="prod-img" src="https://www.photographyblog.com/imager/entryimages/121915/canon_eos_850d_01_8c9cd6ffa9b02044a7a3327bc82c5649.jpg" alt="">
+   <h3>Cannon Camra</h3>
+</div>
+</div >
+
+
+</body>
+</html>

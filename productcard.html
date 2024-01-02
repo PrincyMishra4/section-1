@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Bootstrap</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .myimg{
+            height: 300px;
+            object-fit: cover;
+            object-position: center;
+        }
+        header{
+            height: 50vh;
+            background-image: linear-gradient(0deg, #000000d9, #0000007a),
+            url("https://shop.panasonic.com/cdn/shop/collections/gseries_1500x600_b33ccac2-ff2d-493b-a359-41f5852b0be5.jpg?v=1692041859&width=2048");
+            background-size: cover;
+            background-position: center;
+        }
+        .title{
+            transform:perspective(500px) ;
+        }
+         .card{
+            transform-style: preserve-3d;
+            transform: perspective(1000px);
+         }
+
+         .card-body{
+            transform: translateZ(30px);
+         }
+    </style>
+</head>
+<body class="bg-primary">
+
+    <header class="bg-dark text-white d-felx">
+        <div class="container py-5 my-auto">
+            <h1 class="text-center display-1 fw-bold title">Super Black Friday Sale</h1>
+            <p class="fs-4 text-center sub-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores eveniet minima nobis, perferendis laborum soluta.</p>
+
+            <div class="input-group w-75 mx-auto my-5 search">
+                <div class="input-group-text">
+                  <i class="fa-solid fa-magnifying-glass fa-beat-fade"></i>
+                </div>
+             <input type="text" class="form-control">
+             <button class="btn btn-warning">Search</button>
+            </div>
+        </div>
+
+    </header>
+
+    <section>
+
+     <div class="container py-5">
+        <div class="row">
+            <div class="col-md-3 mb-4 ">
+
+                <div class="card shadow">
+                     <img class=" myimg card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkup4UpgrUPped0EGYC1SDdREPOg24WYetVg&usqp=CAU" alt="">
+                    <div class="card-body">
+                        <p class="fw-bold text-muted" >FujiFilm</p>
+                        <h4>Intex Mini Camra</h4>
+                        <p class="text-black-50 m-0" >Blue</p>
+
+                        <p><i class="fa-solid fa-star text-warning"></i> 4.3 stars form 8327 Reviews</p>
+
+                        <h3>₹38,999</h3>
+
+                        <button class="btn btn-dark mt-3 float-end"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        
+                    </div>
+        
+                </div>
+          </div>
+          <div class="col-md-3 mb-4 ">
+
+            <div class="card shadow">
+                 <img class=" myimg card-img-top" src="https://m.media-amazon.com/images/I/71vVyKwaHjL._AC_UF894,1000_QL80_.jpg" alt="">
+                <div class="card-body">
+                    <p class="fw-bold text-muted" >FujiFilm</p>
+                    <h4>Intex Mini Camra</h4>
+                    <p class="text-black-50 m-0" >Blue</p>
+
+                    <p><i class="fa-solid fa-star text-warning"></i> 4.3 stars form 8327 Reviews</p>
+
+                    <h3>₹38,999</h3>
+
+                    <button class="btn btn-dark mt-3 float-end"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+    
+                </div>
+    
+            </div>
+      </div>   <div class="col-md-3 mb-4 ">
+
+        <div class="card shadow">
+             <img class=" myimg card-img-top" src="https://img.joomcdn.net/9743fd385211d97a58701425579a0ed51856b242_1024_1024.jpeg" alt="">
+            <div class="card-body">
+                <p class="fw-bold text-muted" >FujiFilm</p>
+                <h4>Intex Mini Camra</h4>
+                <p class="text-black-50 m-0" >Blue</p>
+
+                <p><i class="fa-solid fa-star text-warning"></i> 4.3 stars form 8327 Reviews</p>
+
+                <h3>₹38,999</h3>
+
+                <button class="btn btn-dark mt-3 float-end"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+
+            </div>
+
+        </div>
+  </div>   <div class="col-md-3 mb-4 ">
+
+    <div class="card shadow">
+         <img class=" myimg card-img-top" src="https://m.media-amazon.com/images/I/51T3ZomxaCL._AC_UF1000,1000_QL80_.jpg" alt="">
+        <div class="card-body">
+            <p class="fw-bold text-muted" >FujiFilm</p>
+            <h4>Intex Mini Camra</h4>
+            <p class="text-black-50 m-0" >Blue</p>
+
+            <p><i class="fa-solid fa-star text-warning"></i> 4.3 stars form 8327 Reviews</p>
+
+            <h3>₹38,999</h3>
+
+            <button class="btn btn-dark mt-3 float-end"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+
+        </div>
+
+    </div>
+</div>
+
+       </div>
+             
+     </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        ScrollReveal().reveal('.card',{
+            // Delay: 500,
+            origin:'bottom',
+            distance:'50px',
+            interval:100,
+            scale :0.8
+        });
+
+        ScrollReveal().reveal('.title',{
+            origin: 'bottom',
+            distance:'70px',
+            rotate: {
+                x: -90
+            },
+            duration: 1000
+
+        })
+        ScrollReveal().reveal('.sub-title',{
+           origin:'right',
+           distance:'100px'
+
+        })
+        ScrollReveal().reveal('.search',{
+            origin:'left',
+            distance:'100px'
+        })
+
+
+
+    </script>
+
+    <script>
+        VanillaTilt.init( document.querySelectorAll('.card'),{
+            max:20,
+            speed:500,
+            
+        });
+    </script>
+</body>
+</html>

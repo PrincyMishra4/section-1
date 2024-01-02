@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+    <style>
+
+    *{
+        font-family: Inter;
+    }
+    .mycard{
+        /* border: 2px solid black; */
+        border: 2px solid black;
+        width: 20%;
+        padding: 30px;
+        border-radius: 10px;
+        /* x-offset y-offset blur size color */
+        box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.353);
+        background-color: rgb(233, 236, 237);
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #ffbac8;
+        background-size: cover;
+        background-position: center;
+
+        margin: 0;
+    } 
+    
+    .myinput{
+        display: block;
+        width:100%;
+        padding:3px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: 1px solid black;
+        outline: none;
+        margin-bottom: 5px;
+        margin-top: 1px;
+    }
+    .myinput:active{
+        outline: 2px solid black;
+    }
+
+    .myinput:focus{
+        background-color: aquamarine;
+    }
+
+    .mybtn{
+        width: 100%;
+        padding: 4px;
+        border-radius: 5px;
+        margin-top: 0;
+        background-color: blue;
+        color: white;
+        font-weight: bold;
+        border: none;
+        box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.4);
+        transition-duration: 0.3s;
+        
+    }
+
+    .mybtn:hover{
+        box-shadow: 2px 2px 3px -1px rgba(0, 0, 0, 0.4);
+        transform: scale(0.9);
+    }
+
+    .title{
+        text-align: center;
+        font-size: 30px;
+        font-family: Inter;
+    }
+    .logo{
+        width: 100px;
+        margin: auto;
+        display: block;
+                
+
+    }
+    </style>
+
+</head>
+<body>
+    <div class="mycard">
+        <img class="logo" src="https://w1.pngwing.com/pngs/595/841/png-transparent-color-event-tickets-film-cinema-logo-price-yellow-text.png" alt="">
+        <h2 class="title">Movie Ticket Form</h2>
+        
+        <form>
+            <label>Movie Title</label>
+            <br>
+            <input type="text" class="myinput" autofocus>
+
+            <br>
+            <label>Directed by</label>
+            <br>
+            <input type="text" class="myinput" autofocus>
+
+            <br>
+            <label>Date of Release</label>
+            <br>
+            <input type="Date" class="myinput" autofocus>
+
+            <br>
+            <label>Time</label>
+            <br>
+            <input type="Time" class="myinput" autofocus>
+
+            <br>
+            <label>Address</label>
+            <br>
+            <input type="Address" class="myinput" autofocus>
+
+            <br>
+            <label>Pincode</label>
+            <br>
+            <input type="Pincode" class="myinput" autofocus>
+
+            <br>
+            <label>Row</label>
+            <br>
+            <input type="Row no." class="myinput" autofocus>
+
+            <br>
+            <label>Seat Number</label>
+            <br>
+            <input type="seat number" class="myinput" autofocus>
+            <br>
+             <br>
+            <button class="mybtn" >submit</button>
+
+        </form>
+
+    </div>    
+</body>
+</html>

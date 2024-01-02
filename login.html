@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>document</title>
+    
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
     <style>
 
+        *{
+            font-family: Roboto;
+        }
         .mycard{
             /* border:2px solid red */
          border: 2px solid red;
@@ -14,12 +19,75 @@
          border-radius: 10px;
          /* X-offset y-offset blur size color */
          box-shadow:  3px 3px 10px 2px rgba(0, 0, 0, 0.353);
+         background-color: white;
+
         }
         body{
             display: flex;
             justify-content:  center;
             align-items: center;
             min-height: 100vh;
+
+            /* background-color: #ffbac8; */
+            /* background-image: linear-gradient(0deg, rgba(255, 165, 165), blue,yellow,green,orange); */
+            /* background-image: url('https://wallpapers.com/images/hd/plant-background-mh4y9mexexlv960o.jpg'); */
+            background-image: linear-gradient(0deg, #ffffff4e, #00000051),
+                              url('https://wallpapers.com/images/hd/plant-background-mh4y9mexexlv960o.jpg');
+            background-size: cover;
+            background-position: center;
+
+            margin: 0;
+            
+        }
+
+
+        .myinput{
+            display: block;
+            width: 100%;
+            padding:10px ;
+            box-sizing:border-box ;
+            border-radius: 5px;
+            border: 1px solid black;
+            outline: none;
+            margin-bottom: 20px;
+            margin-top: 5px;
+        }
+        .myinput:active{
+            outline: 2px solid black;
+        }
+
+        .myinput:focus{
+            background-color: aquamarine;
+        }
+
+        .mybtn{
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 30px;
+            background-color: crimson;
+            color: white;
+            font-weight: bold;
+            border: none;
+            box-shadow: 1px 2px 2px 0px rgba(0, 0, 0, 0.4);
+
+            transition-duration: 0.3s;
+        }
+
+        .mybtn:hover{
+            box-shadow: 2px 2px 3px -1px rgba(0, 0, 0, 0.4);
+            transform: scale(0.9);
+        }
+        .title{
+            text-align: center;
+            font-size: 30px;
+            font-family:Roboto;
+        }
+
+        .logo{
+            width: 150px;
+            margin: auto;
+            display: block;
         }
     </style>
 </head>
@@ -27,11 +95,13 @@
     
 
 <div class="mycard">
+    <img class="logo" src="coding.png" alt="">
  <h3 class="title">Login Form</h3>
 
     <form>
     <label >Email Address</label>
-    <input type="text" class="myinput">
+    <input type="text" class="myinput" autofocus >
+    
 
     <label >Password</label>
     <input type="Password" class="myinput">
