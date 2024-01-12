@@ -44,3 +44,7 @@ fruits.splice(1, 0, 'strawberry', 'dragon fruit', 'kiwi')
 //this will insert elements
 
 console.log(fruits); 
+
+let i = 10;
+
+i = 36;

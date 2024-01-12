@@ -56,3 +56,9 @@ console.log( 56.7 +'%');
 // || - or operator
 // ! - not operator
 
+let text = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.';
+let numbers = text.match(/\d+/g).map(Number);
+console.log(numbers);
+let totalAnnualIncome = (numbers[0] * 12) + numbers[1] + (numbers[2] * 12);
+console.log(totalAnnualIncome);
+
